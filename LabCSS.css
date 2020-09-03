@@ -1,0 +1,146 @@
+selector {
+    property value;
+    property value;
+    property value; 
+}
+
+.tooltip {
+    position: relative;
+    display: initial;
+    border-bottom: 3px groove red;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: royalblue;
+    color: seashell;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    position: absolute;
+    top: -5px;
+    right: 105%;
+  }
+  
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%; /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+  .tooltip:hover .tooltiptext {
+    visibility: inherit;
+  }
+
+-----------------------------------------------------------------------
+
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin: 0 4px;
+  }
+  
+  .pagination a.active {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+      background-color: chartreuse;
+  }
+
+----------------------------------------------------------------------
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+------------------------------------------------------------------------
+
+
+  .dropbtn {
+    background-color: red;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;  }
